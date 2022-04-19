@@ -1,0 +1,66 @@
+.cards {
+    perspective: 500px;
+}
+.card1 {
+    width: 400px;
+    height: 500px;
+    background: url('../image/together.jpg') center no-repeat;
+    background-size: cover;
+    border: 1px solid rgb(105, 99, 92);
+    border-radius: 4px;
+    position: relative;
+    transform-style: preserve-3d;
+    will-change: transform;
+    transition: transform .9s;
+}
+.card2 {
+    width: 400px;
+    height: 500px;
+    background: url('../image/distance.jpg') center no-repeat;
+    background-size: cover;
+    border: 1px solid rgb(105, 99, 92);
+    border-radius: 4px;
+    position: relative;
+    transform-style: preserve-3d;
+    will-change: transform;
+    transition: transform .9s;
+    margin-left: 100px;
+}
+
+.card1:hover, .card2:hover {
+    transform: translate(10px) rotateX(20deg) rotateY(30deg);
+}
+
+.card-title1 {
+    color: rgb(197, 111, 13);
+    position: absolute;
+    top: 33%;
+    right: 10px;
+    transform: translateY(-50%);
+    transition: transform .9s;
+    font-size: 30px;
+}
+.card-title2 {
+    color: rgb(226, 155, 122);
+    position: absolute;
+    top: 33%;
+    right: 10px;
+    transform: translateY(-50%);
+    transition: transform .9s;
+    font-size: 30px;
+}
+
+.card-title1 {
+    transform: translateZ(50px)
+}
+.card-title2 {
+    transform: translateZ(50px)
+}
+
+
+.pic {
+    max-width: 1000px;
+    margin: 0 auto;
+    display:flex;
+    margin-top: 5%;
+}
